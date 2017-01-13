@@ -4,4 +4,5 @@ go:
   - 1.7
 
 install:
+  - curl https://glide.sh/get | sh
   - glide install
