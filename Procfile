@@ -1,0 +1,1 @@
+web: webpage-gopherjs
