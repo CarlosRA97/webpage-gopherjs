@@ -6,7 +6,10 @@ import (
 	"net/http"
 
 	//"github.com/gopherjs/gopherjs/js"
+	"os"
 )
+
+var port = os.Getenv("PORT")
 
 func main() {
 	// Servidor web
@@ -14,5 +17,10 @@ func main() {
 		fmt.Fprint(response, "Hello there")
 	})
 
-	http.ListenAndServe(":8080", nil)
+	if port == "" {
+		port = "8080"
+	}
+
+
+	http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
 }
