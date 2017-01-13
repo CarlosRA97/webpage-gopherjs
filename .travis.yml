@@ -4,7 +4,6 @@ go:
   - 1.7
 
 before_install:
-  - mkdir $GOPATH/bin $GOPATH/src
   - curl https://glide.sh/get | sh
 
 install:
