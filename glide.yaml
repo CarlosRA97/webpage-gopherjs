@@ -1,3 +1,2 @@
 package: github.com/CarlosRA97/webpage-gopherjs
 import:
-  - package: github.com/gopherjs/gopherjs
