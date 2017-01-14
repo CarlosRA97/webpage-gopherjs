@@ -41,7 +41,10 @@ func session() (*r.Session) {
 func Create(data interface{}) error {
 	s := session()
 	defer s.Close()
-	err := r.DB("hotel").Table("usuarios").Insert(&data.(UsuarioHotel)).Exec(s)
+
+	d := data.(UsuarioHotel)
+
+	err := r.DB("hotel").Table("usuarios").Insert(&d).Exec(s)
 	if err != nil {
 		return err
 	}

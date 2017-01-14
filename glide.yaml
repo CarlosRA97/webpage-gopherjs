@@ -1,2 +1,4 @@
 package: github.com/CarlosRA97/webpage-gopherjs
 import:
+- package: gopkg.in/gorethink/gorethink.v2
+  version: ^3.0.0
