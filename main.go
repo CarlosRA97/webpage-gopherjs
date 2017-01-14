@@ -11,7 +11,7 @@ import (
 )
 
 var port = os.Getenv("PORT")
-x
+
 type CRUD interface {
 	Create(data interface{}) error
 	Read(id uint) (interface{}, error)
